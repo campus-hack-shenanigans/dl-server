@@ -38,7 +38,7 @@ def post_lyrics():
     poems_count = request.form["poems_count"]
     model_output = run_model(word,temp,poems_count)
     formatedData = format(model_output)
-    return formatedData
+    return str(formatedData)
 
 
 if __name__ == '__main__':
