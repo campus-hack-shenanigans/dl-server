@@ -1,0 +1,23 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+"flake8" = "*"
+"flake8-commas" = "*"
+"flake8-comprehensions" = "*"
+"flake8-debugger" = "*"
+"flake8-docstrings" = "*"
+"flake8-isort" = "*"
+"flake8-mutable" = "*"
+"flake8-todo" = "*"
+
+[packages]
+"flask" = "*"
+
+[requires]
+python_version = "3.6"
+
+[scripts]
+lint = "flake8 src"
